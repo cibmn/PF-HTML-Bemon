@@ -45,31 +45,69 @@ h2{
 
 }
 
-nav{
-    color: rgb(60, 60, 60);
-    padding: 110px;
-    text-align: center;
+.navbar-nav{
     list-style: none;
     font-family: 'Onest', sans-serif;
     font-size: 28px;
-    font-style: italic;
-    font-weight: bold;
+}
+
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    background-color: rgb(173, 173, 174);
     
 }
 
-.barra ul li{
-    list-style: none;
-    display: inline-block;
-}
-.barra a{
-    text-decoration: none;
-    color: rgb(89, 88, 88);
+.carousel-inidcators button{
+    height: 20px;
+    border: 2px solid rgb(173, 173, 174);
 }
 
-.barra a:hover{
-    color:  rgb(147, 146, 146);
+.carousel-item{
+    height: 300px;
+    margin-bottom: 30px;
 }
 
+
+.item{
+    height: 300px;
+    border: 3px solid rgb(254, 254, 254);
+}
+
+.item:hover{
+    background-size: 140%;
+    transition: all 4s;
+}
+
+.item1{
+    background-image: url(/img/s1.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item2{
+    background-image: url(/img/s2.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item3{
+    background-image: url(/img/s3.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 h3{
     color: rgb(60, 60, 60);
