@@ -268,11 +268,27 @@ h5 {
   text-align: center;
 }
 
-#dma {
-  height: 350px;
-  width: 900px;
+/* responsive a 480 */
+@media only screen and (min-width: 480px) and (orientation: portrait) {
+  #table table-bordered {
+    height: 150;
+    width: 250;
+  }
 }
-
+/* responsive a 720 */
+@media only screen and (min-width: 720px) and (orientation: landscape) {
+  #table table-bordered {
+    height: 300;
+    width: 500;
+  }
+}
+/* responsive a 1024 */
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+  #table table-bordered {
+    height: 350;
+    width: 900;
+  }
+}
 th {
   font-size: 20px;
   font-family: "Onest", sans-serif;
@@ -327,6 +343,16 @@ article {
   font-family: "Onest", sans-serif;
   font-style: none;
   font-weight: lighter;
+}
+
+#info {
+  background-color: white;
+  margin: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  font-family: "Onest", sans-serif;
+  font-weight: normal !important;
 }
 
 .dd {

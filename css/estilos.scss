@@ -113,18 +113,15 @@ h5{
 }
 
 
-
 @import "_galeria";
+
 
 .tabla{
     margin: 40px;
     text-align: center;
 }
 
-#dma{
-    height: 350px;
-    width: 900px;
-}
+@import "_horarios";
 
 
 th{
@@ -184,13 +181,23 @@ article{
     font-weight: lighter;
 }
 
+#info{
+    background-color: white;
+    margin: $margin;
+    margin-top: $margin-top;
+    margin-bottom: 50px;
+    text-decoration: none;
+    font-family: $font1;
+    font-weight: normal !important;
+
+}
+
 .dd{
     margin: $margin;
     text-align: left;
     font-family: $font1;
     font-style: none;
 }
-
 
 
 footer{
