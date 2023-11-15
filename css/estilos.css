@@ -19,48 +19,6 @@ header {
   text-align: center;
 }
 
-h1 {
-  color: rgb(147, 146, 146);
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  font-family: "Onest", sans-serif;
-  text-shadow: 0 0 0.5px #2a2a2a;
-}
-
-h2 {
-  color: rgb(60, 60, 60);
-  text-align: center;
-  list-style: none;
-  font-family: "Onest", sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-h3 {
-  color: rgb(60, 60, 60);
-  padding: 10px;
-  font-family: "Onest", sans-serif;
-  font-size: 20px;
-  font-weight: lighter;
-}
-
-h4 {
-  color: rgb(89, 88, 88);
-  padding: 8px;
-  text-align: left;
-  font-family: "Onest", sans-serif;
-  font-size: 24px;
-}
-
-h5 {
-  color: rgb(89, 88, 88);
-  padding: 30px;
-  text-align: center !important;
-  font-family: "Onest", sans-serif;
-  font-size: 24px;
-}
-
 .navbar-nav {
   list-style: none;
   font-family: "Onest", sans-serif;
@@ -163,6 +121,65 @@ h5 {
   background-image: url(/img/s1.jpg);
 }
 
+/* responsive a menos de 480 */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .galeria {
+    background-color: #e9ecef;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 20px);
+  }
+  .h1 {
+    font-size: 16px;
+  }
+  .h2 {
+    font-size: 16px;
+  }
+  .h3 {
+    font-size: 16px;
+  }
+  .h4 {
+    font-size: 16px;
+  }
+  .navbar-nav {
+    font-size: 16px;
+  }
+  .carousel-item {
+    height: 100px;
+  }
+  #dma {
+    padding: 20px;
+    font-size: 16px;
+    height: 350px;
+    width: 350px;
+  }
+  #p {
+    margin: 20px;
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+  }
+  #form {
+    width: 140px;
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Onest", sans-serif;
+  }
+  #contactar {
+    font-size: 16px;
+    text-align: left;
+  }
+  #comentario {
+    width: 240px;
+  }
+  .footer {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .footer a {
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+}
 /* responsive a 480 */
 @media only screen and (min-width: 480px) and (orientation: portrait) {
   .galeria {
@@ -171,7 +188,7 @@ h5 {
     grid-template-rows: repeat(3, 40px);
   }
   .h1 {
-    font-size: 18px;
+    font-size: 22px;
   }
   .h2 {
     font-size: 20px;
@@ -188,10 +205,28 @@ h5 {
   .carousel-item {
     height: 250px;
   }
-  .dma {
+  #dma {
     font-size: 18px;
-    height: 150px;
-    width: 700px;
+    height: 350px;
+    width: 580px;
+  }
+  #p {
+    margin: 20px;
+    font-family: "Onest", sans-serif;
+    font-size: 18px;
+  }
+  #form {
+    width: 240px;
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Onest", sans-serif;
+  }
+  #contactar {
+    font-size: 16px;
+  }
+  #comentario {
+    width: 300px;
   }
   .footer {
     font-size: 10px;
@@ -208,6 +243,17 @@ h5 {
     background-color: #e9ecef;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 80px);
+  }
+  #form {
+    margin-bottom: 50px;
+    text-align: left;
+    font-family: "Onest", sans-serif;
+  }
+  #contactar {
+    font-size: 18px;
+  }
+  #comentario {
+    width: 500px;
   }
 }
 /* responsive a 1024 */
@@ -263,36 +309,45 @@ h5 {
   grid-row: 3/4;
 }
 
-.tabla {
-  margin: 40px;
+h1 {
+  color: rgb(147, 146, 146);
   text-align: center;
-}
-
-#dma {
-  height: 350px;
-  width: 900px;
-}
-
-th {
-  font-size: 20px;
+  font-size: 40px;
+  font-weight: bold;
   font-family: "Onest", sans-serif;
+  text-shadow: 0 0 0.5px #2a2a2a;
+}
+
+h2 {
   color: rgb(60, 60, 60);
-  background-color: #e9ecef;
-}
-
-td {
-  font-size: 15px;
-  font-family: "Onest", sans-serif;
   text-align: center;
+  list-style: none;
+  font-family: "Onest", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-#form {
-  margin: 10px;
-  margin-bottom: 50px;
-  padding: 20px;
-  text-align: left;
-  font-size: 18px;
+h3 {
+  color: rgb(60, 60, 60);
   font-family: "Onest", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+h4 {
+  color: rgb(89, 88, 88);
+  padding: 8px;
+  text-align: left;
+  font-family: "Onest", sans-serif;
+  font-size: 24px;
+}
+
+h5 {
+  color: rgb(89, 88, 88);
+  padding: 30px;
+  text-align: center !important;
+  font-family: "Onest", sans-serif;
+  font-size: 24px;
 }
 
 section {
@@ -309,34 +364,8 @@ aside {
   text-align: left;
 }
 
-article {
-  margin: 20px;
-  margin-top: 50px;
-  margin-top: 50px;
-  background-color: #e9ecef;
-}
-
-#subs {
-  margin: auto;
-  text-align: center;
-}
-
-.dt {
-  margin: 20px;
-  text-align: left;
-  font-family: "Onest", sans-serif;
-  font-style: none;
-  font-weight: lighter;
-}
-
-.dd {
-  margin: 20px;
-  text-align: left;
-  font-family: "Onest", sans-serif;
-  font-style: none;
-}
-
 footer {
+  padding: 10px;
   background-color: #d7d4d4;
   color: rgb(60, 60, 60);
   font-size: 20px;
@@ -348,4 +377,62 @@ footer a {
   color: rgb(60, 60, 60);
   font-size: 25px;
   letter-spacing: 8px;
+}
+
+.blog {
+  margin: 20px;
+  margin-top: 50px;
+  margin-top: 50px;
+  background-color: #e9ecef;
+}
+
+#subs {
+  margin: auto;
+  text-align: center;
+}
+
+#p {
+  margin: 20px;
+  font-family: "Onest", sans-serif;
+  font-style: none;
+  font-weight: lighter;
+}
+
+#dd {
+  margin: 20px;
+  text-align: left;
+  font-family: "Onest", sans-serif;
+  font-style: none;
+}
+
+.row {
+  margin: 20px;
+}
+
+#presentacion {
+  margin: 20px;
+}
+
+.tabla {
+  margin: 40px;
+  text-align: center;
+}
+
+#th {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Onest", sans-serif;
+  color: rgb(60, 60, 60);
+  background-color: #e9ecef;
+}
+
+#td {
+  font-size: 15px;
+  font-family: "Onest", sans-serif;
+  text-align: center;
+  background-color: #e9ecef;
+}
+
+.fypa {
+  margin: 20px;
 }/*# sourceMappingURL=estilos.css.map */

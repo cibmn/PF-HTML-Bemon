@@ -76,6 +76,69 @@
 }
 
 
+
+
+/* responsive a menos de 480 */
+@media only screen and (max-width: 480px) and (orientation: portrait){
+    .galeria{
+        background-color: $color5;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 20px);
+    }
+    .h1{
+        font-size: 16px;
+    }
+    .h2{
+        font-size: 16px;
+    }
+    .h3{
+        font-size: 16px;
+    }
+    .h4{
+        font-size: 16px;
+    }
+    .navbar-nav{
+        font-size: 16px;
+    }
+    .carousel-item{
+        height: 100px;
+    }
+    #dma{
+        padding: 20px;
+        font-size: 16px;
+        height: 350px;
+        width: 350px;
+    }
+    #p{
+        margin: $margin;
+        font-family: $font1;
+        font-size: 16px;
+    }
+    #form{
+        width: 140px;
+        margin-bottom: 50px;
+        text-align: left;
+        font-size: 16px;
+        font-family: $font1;
+    }
+    #contactar{
+        font-size: 16px;
+        text-align: left;
+    }
+    #comentario{
+        width: 240px;
+    }
+    .footer{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .footer a{
+        font-size: 16px;
+        letter-spacing: 4px;
+    }
+    
+}
+
 /* responsive a 480 */
 @media only screen and (min-width: 480px) and (orientation: portrait){
     .galeria{
@@ -84,7 +147,7 @@
         grid-template-rows: repeat(3, 40px);
     }
     .h1{
-        font-size: 18px;
+        font-size: 22px;
     }
     .h2{
         font-size: 20px;
@@ -101,10 +164,28 @@
     .carousel-item{
         height: 250px;
     }
-    .dma{
+    #dma{
         font-size: 18px;
-        height: 150px;
-        width: 700px;
+        height: 350px;
+        width: 580px;
+    }
+    #p{
+        margin: $margin;
+        font-family: $font1;
+        font-size: 18px;
+    }
+    #form{
+        width: 240px;
+        margin-bottom: 50px;
+        text-align: left;
+        font-size: 16px;
+        font-family: $font1;
+    }
+    #contactar{
+        font-size: 16px;
+    }
+    #comentario{
+        width: 300px;
     }
     .footer{
         font-size: 10px;
@@ -124,6 +205,17 @@
         background-color: $color5;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 80px);
+    }
+    #form{
+        margin-bottom: 50px;
+        text-align: left;
+        font-family: $font1;
+    }
+    #contactar{
+        font-size: 18px;
+    }
+    #comentario{
+        width: 500px;
     }
 }
 
