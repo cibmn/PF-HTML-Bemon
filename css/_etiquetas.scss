@@ -7,6 +7,20 @@ h1{
     font-weight: bold; 
     font-family: $font1;
     text-shadow: 0 0 0.5px #2a2a2a;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-delay: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 
