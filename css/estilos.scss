@@ -67,16 +67,17 @@ header{
 }
 
 
-
-@import "_galyresp";
-@import "_etiquetas";
-@import "_llamados";
+@import "_galeria";
 
 .tabla{
     margin: 40px;
     text-align: center;
 }
 
+#dma{
+    height: 350px;
+    width: 900px;
+}
 
 #th{
     text-align: center;
@@ -93,8 +94,38 @@ header{
     background-color: $color5;
 }
 
-.fypa{
+#subs{
+    margin: auto;
+    text-align: center;
+}
+
+.dt{
     margin: $margin;
+    text-align: left;
+    font-family: $font1;
+    font-style: none;
+    font-weight: lighter;
+}
+
+.dd{
+    margin: $margin;
+    text-align: left;
+    font-family: $font1;
+    font-style: none;
 }
 
 
+
+footer{
+    background-color: #d7d4d4;
+    color:$color2;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+footer a{
+    color: $color2;
+    font-size: 25px;
+    letter-spacing: 8px;
+}

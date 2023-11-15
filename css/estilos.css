@@ -312,16 +312,15 @@ header {
 h1 {
   color: rgb(147, 146, 146);
   text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  font-family: "Onest", sans-serif;
-  text-shadow: 0 0 0.5px #2a2a2a;
 }
 
-h2 {
-  color: rgb(60, 60, 60);
-  text-align: center;
-  list-style: none;
+#dma {
+  height: 350px;
+  width: 900px;
+}
+
+th {
+  font-size: 20px;
   font-family: "Onest", sans-serif;
   font-size: 28px;
   font-weight: bold;
@@ -396,6 +395,16 @@ footer a {
   font-family: "Onest", sans-serif;
   font-style: none;
   font-weight: lighter;
+}
+
+#info {
+  background-color: white;
+  margin: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  font-family: "Onest", sans-serif;
+  font-weight: normal !important;
 }
 
 #dd {
