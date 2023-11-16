@@ -81,7 +81,6 @@
 /* responsive a menos de 480 */
 @media only screen and (max-width: 480px) and (orientation: portrait){
     .galeria{
-        background-color: $color5;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 20px);
     }
@@ -142,7 +141,6 @@
 /* responsive a 480 */
 @media only screen and (min-width: 480px) and (orientation: portrait){
     .galeria{
-        background-color: $color5;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 40px);
     }
@@ -202,7 +200,6 @@
 /* responsive a 720 */
 @media only screen and (min-width: 720px) and (orientation: landscape){
     .galeria{
-        background-color: $color5;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 80px);
     }
@@ -224,7 +221,6 @@
 /* responsive a 1024 */
 @media only screen and (min-width: 1024px) and (orientation: landscape){
     .galeria{
-        background-color: $color5;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 120px);
     }
