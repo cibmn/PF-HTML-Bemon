@@ -7,6 +7,10 @@
     <meta name="description" content="Eventos, talleres, workshops de ashtanga, hatha y vinyasa yoga en Buenos Aires, Argentina">
     <meta name="keywords" content="yoga, ashtanga, mantra, workshop, retiro, mysore, india, shiva ">
 
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,7 +21,7 @@
     <!-- BS 5.1 finaliza -->
 
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Gokulam Ashtanga Yoga Ashram</title>
+    <title>Eventos - Gokulam Ashtanga Yoga Ashram</title>
 </head>
 <body>
     <!-- header-->
@@ -80,31 +84,31 @@
         </dl>
         </section>
 
-        <!--- newsletter-->
-        <section>
-            <TABLE id="subs" border="1" cellspacing="1" cellpadding="10" id="subs" align="center">
-                <TR>
-                    <TH>
-                        <h4>Suscribite al newsletter</h4>
-                        <form action="enviar.php" method="post" enctype="text/plain">
-                            <h3>Recibí nuestras promos, eventos e información importante</h3>
-                            <input type="text" placeholder="Ingresá tu mail" required>
-                            <input type="submit">
-                        </form>
-                    </TH>
-                </tr>
-            </TABLE>
-        </section>
+<!--- newsletter-->
+<section>
+    <TABLE id="subs" border="1" cellspacing="1"  cellpadding="8" width="550"  align="center" data-aos="fade-up">
+        <TR>
+            <TH>
+                <h4>Suscribite al newsletter</h4>
+                    <form action="enviar.php" method="post" enctype="text/plain">
+                <h3>Recibí nuestras promos, eventos e información importante</h3>
+                    <input type="text" placeholder="Ingresá tu mail" required>
+                <input type="submit"></form>
+            </TH>
+        </tr>
+    </TABLE>
+</section>
+<!--- final del newsletter-->
 
 
-        <!-- final del contenido-->
+    <!-- final del contenido-->
     </main>
 
     <!--footer-->
     <footer>
         <h3> © 2023 gokulamyoga.com.ar todos los derechos reservados
         </h3>
-            <nav class="redes">
+            <nav>
                 <a href="https://www.instagram.com/gokulamyoga/"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.threads.net/@gokulamyoga"><i class="fa-brands fa-threads"></i></a>
                 <a href="https://www.facebook.com/gokulamyoga"><i class="fa-brands fa-facebook-f"></i></a>
@@ -113,9 +117,20 @@
     </footer>
     <!-- fin de footer-->
 
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 
 
 </body>
