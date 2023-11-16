@@ -23,7 +23,9 @@ $font1: 'Onest', sans-serif;
 $margin: 20px;
 $margin-top: 50px;
 
-
+@import "_galyresp";
+@import "_etiquetas";
+@import "_llamados";
 
 header{
     background-image: url(../img/s4.jpg);
@@ -32,6 +34,22 @@ header{
     background-size: 100% 50vh;
     background-repeat: no-repeat; 
     background-position: center top;
+    text-align: center;
+}
+
+
+input{
+    margin: $margin;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    transition: all 1s;
+}
+input:active{
+    background-color: yellowgreen;
+/*}
+input::placeholder{*/
+    border: 2px dashed grey;
     text-align: center;
 }
 
@@ -68,9 +86,7 @@ header{
 
 
 
-@import "_galyresp";
-@import "_etiquetas";
-@import "_llamados";
+
 
 .tabla{
     margin: 40px;
