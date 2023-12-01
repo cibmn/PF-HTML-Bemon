@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 html{
     scroll-behavior: smooth;
 }
@@ -16,10 +15,7 @@ $color2: rgb(60, 60, 60);
 $color3: rgb(89, 88, 88);
 $color4: rgb(164, 155, 155);
 $color5: #e9ecef;
-
-
 $font1: 'Onest', sans-serif;
-
 $margin: 20px;
 $margin-top: 50px;
 
@@ -35,8 +31,8 @@ header{
     background-repeat: no-repeat; 
     background-position: center top;
     text-align: center;
+    object-fit: cover;
 }
-
 
 input{
     margin: $margin;
@@ -70,26 +66,10 @@ input::placeholder{*/
     text-decoration: none;
 }
 
-.carousel-control-prev, .carousel-control-next{
-    background-color: $color4;
-    
-}
-
-.carousel-indicators button{
-    height: 20px;
-    border: 2px solid $color4;
-}
-
-.carousel-item{
-    height: 450px;
-}
-
-
 .tabla{
     margin: 40px;
     text-align: center;
 }
-
 
 #th{
     text-align: center;
@@ -109,5 +89,3 @@ input::placeholder{*/
 .fypa{
     margin: $margin;
 }
-
-

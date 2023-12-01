@@ -29,7 +29,6 @@
     transition: all 4s;
 }
 
-
 .item1{
     grid-area: img1;
     background-image: url(/img/s1.jpg);
@@ -75,9 +74,6 @@
         background-image: url(/img/s1.jpg);
 }
 
-
-
-
 /* responsive a menos de 480 */
 @media only screen and (max-width: 480px) and (orientation: portrait){
     .galeria{
@@ -96,17 +92,28 @@
     .h4{
         font-size: 16px;
     }
-    .navbar-nav{
+    #navbar-nav{
         font-size: 16px;
     }
-    .carousel-item{
-        height: 100px;
+    .carousel-control-prev, .carousel-control-next{
+        background-color: $color4;
+    }
+    .carousel-indicators button{
+        border: 2px solid $color4;
+    }
+    #carousel-item{
+        height: 150px;
+        object-fit: cover;
     }
     #dma{
         padding: 20px;
         font-size: 16px;
         height: 350px;
         width: 350px;
+    }
+    #table-bordered{
+        height: 150;
+        width: 150;
     }
     #p{
         margin: $margin;
@@ -126,6 +133,11 @@
     }
     #comentario{
         width: 240px;
+    }
+    #subs{
+    height: 250;
+    width: 250;
+    text-align: center;
     }
     .footer{
         font-size: 16px;
@@ -159,8 +171,14 @@
     .navbar-nav{
         font-size: 20px;
     }
-    .carousel-item{
-        height: 250px;
+    .carousel-control-prev, .carousel-control-next{
+        background-color: $color4;
+    }
+    .carousel-indicators button{
+        border: 2px solid $color4;
+    }
+    #carousel-item{
+        object-fit: cover;
     }
     #dma{
         font-size: 18px;
@@ -171,6 +189,10 @@
         margin: $margin;
         font-family: $font1;
         font-size: 18px;
+    }
+    #table-bordered{
+        height: 300;
+        width: 500;
     }
     #form{
         width: 240px;
@@ -185,6 +207,10 @@
     #comentario{
         width: 300px;
     }
+    #subs{
+        height: 350;
+        text-align: center;
+    }
     .footer{
         font-size: 10px;
         padding: 10px;
@@ -193,15 +219,26 @@
         font-size: 15px;
         letter-spacing: 4px;
     }
-    
 }
-
 
 /* responsive a 720 */
 @media only screen and (min-width: 720px) and (orientation: landscape){
     .galeria{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 80px);
+    }
+    #demo{
+        width: 700px;
+        margin: $margin;
+    }
+    .carousel-control-prev, .carousel-control-next{
+        background-color: $color4;
+    }
+    .carousel-indicators button{
+        border: 2px solid $color4;
+    }
+    #carousel-item{
+        object-fit: cover;
     }
     #form{
         margin-bottom: 50px;
@@ -214,9 +251,11 @@
     #comentario{
         width: 500px;
     }
+    #subs{
+        width: 450;
+        text-align: center;
+    }
 }
-
-
 
 /* responsive a 1024 */
 @media only screen and (min-width: 1024px) and (orientation: landscape){
@@ -224,56 +263,64 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 120px);
     }
-}
-
+    #demo{
+        margin: $margin;
+    }
+    .carousel-control-prev, .carousel-control-next{
+        background-color: $color4;
+    }
+        .carousel-indicators button{
+        border: 2px solid $color4;
+    }
+    #carousel-item{
+        object-fit: cover;
+    }
     .item1{
         grid-column: 1/2;
         grid-row: 1/2;
     }
-
     .item2{
         grid-column: 2/3;
         grid-row: 1/2;
     }
-
-
     .item3{
         grid-column: 3/4;
         grid-row: 1/2;
     }
-
     .item4{
         grid-column: 1/2;
         grid-row: 2/3;
     }
-
     .item5{
         grid-column: 2/3;
         grid-row: 2/3;
     }
-
-
     .item6{
         grid-column: 3/4;
         grid-row: 2/3;
     }
-
-
     .item7{
         grid-column: 1/2;
         grid-row: 3/4;
     }
-
-
     .item8{
         grid-column: 2/3;
         grid-row: 3/4;
     }
-
-
     .item9{
         grid-column: 3/4;
         grid-row: 3/4;
     }
-
-
+    #carousel-item{
+        height: 350px;
+        object-fit: cover;
+    }
+    #table-bordered{
+        height: 350;
+        width: 500;
+    }
+    #subs{
+        width: 550;
+        text-align: center;
+    }
+}
