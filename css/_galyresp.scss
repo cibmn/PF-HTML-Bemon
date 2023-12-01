@@ -22,6 +22,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 .item:hover{
@@ -31,47 +32,48 @@
 
 .item1{
     grid-area: img1;
-    background-image: url(/img/s1.jpg);
+    background-image: url(../img/s5.jpg);
+
 }
 
 .item2{
     grid-area: img2;
-    background-image: url(/img/s1.jpg);
+    background-image: url(../img/gongs.jpg);
 }
 
 .item3{
     grid-area: img3;
-    background-image: url(/img/s1.jpg);
+    background-image: url(../img/s7.jpg);
 }
 
 .item4{
     grid-area: img4;
-    background-image: url(/img/s1.jpg);
+    background-image: url(../img/s8.jpg);
 }
 
 .item5{
     grid-area: img5;
-    background-image: url(/img/s1.jpg);
+    background-image: url(../img/s9.jpg);
 }
 
 .item6{
     grid-area: img6;
-    background-image: url(/img/s1.jpg);
+    background-image: url(../img/fypa.jpg);
 }
 
 .item7{
     grid-area: img7;
-        background-image: url(/img/s1.jpg);
+        background-image: url(../img/r1.jpg);
 }
 
 .item8{
     grid-area: img8;
-    background-image: url(/img/s1.jpg);
+    background-image: url(../img/r3.jpg);
 }
 
 .item9{
     grid-area: img9;
-        background-image: url(/img/s1.jpg);
+        background-image: url(../img/r4.jpg);
 }
 
 /* responsive a menos de 480 */
@@ -92,7 +94,7 @@
     .h4{
         font-size: 16px;
     }
-    #navbar-nav{
+    .nav-link{
         font-size: 16px;
     }
     .carousel-control-prev, .carousel-control-next{
@@ -134,6 +136,7 @@
     height: 250;
     width: 250;
     text-align: center;
+    font-size: 16px;
     }
     .footer{
         font-size: 16px;
@@ -159,13 +162,13 @@
         font-size: 20px;
     }
     .h3{
-        font-size: 15px;
+        font-size: 16px;
     }
     .h4{
         font-size: 18px;
     }
-    .navbar-nav{
-        font: size 16px;
+    .nav-link{
+        font-size: 18px;
     }
     .carousel-control-prev, .carousel-control-next{
         background-color: $color4;
@@ -203,6 +206,7 @@
     #subs{
         height: 350;
         text-align: center;
+        font-size: 16px;
     }
     .footer{
         font-size: 10px;
@@ -223,6 +227,9 @@
     #demo{
         width: 700px;
         margin: $margin;
+    }
+    #nav-link{
+        font-size: 24px;
     }
     .carousel-control-prev, .carousel-control-next{
         background-color: $color4;
@@ -257,6 +264,7 @@
     #subs{
         width: 450;
         text-align: center;
+        font-size: 18px;
     }
 }
 
@@ -268,6 +276,9 @@
     }
     #demo{
         margin: $margin;
+    }
+    #nav-link{
+        font-size: 28px;
     }
     .carousel-control-prev, .carousel-control-next{
         background-color: $color4;
@@ -329,7 +340,8 @@
         width: 500;
     }
     #subs{
-        width: 550;
+        width: 560px;
         text-align: center;
+        font-size: 18px;
     }
 }

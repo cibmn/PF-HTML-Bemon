@@ -51,12 +51,6 @@ input::placeholder{*/
     text-align: center;
 }
 
-.navbar-nav{
-    list-style: none;
-    font-family: $font1;
-    font-size: 28px;
-}
-
 .collapse{
     display: flex;
     justify-content: flex-end;
@@ -73,21 +67,3 @@ input::placeholder{*/
     text-align: center;
 }
 
-#th{
-    text-align: center;
-    font-size: 20px;
-    font-family: $font1;
-    color: $color2;
-    background-color: $color5;
-}
-
-#td{
-    font-size: 15px;
-    font-family: $font1;
-    text-align: center;
-    background-color: $color5;
-}
-
-.fypa{
-    margin: $margin;
-}

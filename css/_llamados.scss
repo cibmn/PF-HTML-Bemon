@@ -26,3 +26,22 @@
 #presentacion{
     margin: $margin;
 }
+
+#th{
+    text-align: center;
+    font-size: 20px;
+    font-family: $font1;
+    color: $color2;
+    background-color: $color5;
+}
+
+#td{
+    font-size: 15px;
+    font-family: $font1;
+    text-align: center;
+    background-color: $color5;
+}
+
+.fypa{
+    margin: $margin;
+}
