@@ -1,82 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Conoce y contacta a nuestros profesores de yoga y meditación">
     <meta name="keywords" content="yoga, ashtanga, mantra, pattabhi jois, sharath, mysore, india, shiva ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- BS 5.1 inicia -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<!-- BS 5.1 finaliza -->
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BS 5.1 inicia -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- BS 5.1 finaliza -->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Nosotros - Gokulam Ashtanga Yoga Ashram</title>
 </head>
+
 <body>
     <!-- header-->
     <header>
-        <img src="../img/vaca.png" alt="vaca" height="200">
-        <h1>Gokulam</h1>
-        <h3>Ashtanga Yoga Ashram</h3>
+        <img id="vaca" src="../img/vaca.png" alt="vaca">
         <!--navbar inicia -->
-        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <nav class="navbar navbar-light bg-light fixed-top">
             <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                <li class="nav-item">
-                    <a class="nav-link" href="./cyf.html">Clases y Formación</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./eventos.html">Eventos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./us.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+                <a class="navbar-brand" href="#">
+                    <h1>Gokulam Ashtanga Yoga Ashram</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/cyf.html">Clases y Formación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/eventos.html">Eventos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/us.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">Plataforma
+                            <input type="text" placeholder="presiona y tipea el color">
+                        </form>
+                    </div>
+                </div>
             </div>
         </nav>
         <!-- navbar fin-->
+        <!-- final de header-->
     </header>
-    <!-- final de header-->
-<!-- Contenido-->
-<main>
-<!--lista por definición-->
-    <article id="presentacion">
-        <h4>Nosotros</h4>
-            <img src="../img/rasa.jfif" alt=" " height="auto" width="20%"> 
-                <p> Con más de 12 años de experiencia en el mundo de yoga y otros 25 años en la alimentación consciente a base de plantas; Rasa Kirtan Dasi (Florencia) es co-fundadora de Gokulam y profe de las clases de hatha y ashtanga. Suele estar en el shala en su horario favorito que es la mañana. También es la encargada de la parte teórica, práctica y anatómica de la Formación y Profundización en Ashtnaga anual que se ofrece en nuestro estudio.</p>
-            <img src="../img/aksaya.jfif" alt=" " height="auto" width="20%"> 
-            <p> Akshaya Balaram Das es un practicante de Bhakti-yoga y co-fundador de Gokulam. Es el encargado de la parte filosófica y quién anima al desarrollo espiritual en nuestra formación FyPA. Comenzó su camino del yoga a través de hatha hace unos 12 años atrás. Ha practicado bajo la supervisión de Pablo Pirillo hasta la cuarentena. Pueden encontrarlo en los horarios de la tarde-noche.</p>
-            <img src="../img/karen.jpg" alt=" " height="auto" width="20%"> 
-                <p> Para nosotros, Karen es una de las profes más consciente en las clases dedicadas a la vivencia de ser mamá. Teniendo sus años de experiencia en el yoga, continúa formandose como profesional. En 2023 se unió al team Gokulam y se inscribió en el FyPA para comprender de lleno y actuar en consecuencia con los standares del estudio. Podés contactarte directamente con ella para conocerce y coordinar una clase de prueba. Contactar a <a href="https://www.instagram.com/hacia_adentro_yoga/">Karen </a></p>
-            <img src="../img/betu.jpg" alt=" " height="auto" width="20%"> 
-                <p> Betina García es profe de las clases de vinyasa yoga en Gokulam. Sus propuestas se renuevan a cada clase, presentando un dinamismo completo que puede adaptarse completamente a cualquier necesidad y nivel. Utiliza elementos como música para recear un viaje completo. Podés contactarte directamente con ella para conocerce y coordinar una clase de prueba. Contactar a <a href="https://www.instagram.com/betugarciayoga/">Betu </a></p>
-                <p>Si querés más  información, envianos un mensaje a través de <a href="./contacto.html">contacto</a>
-                </p>
-    </article>
-<!-- final de lista por definición-->
-<!-- Final de contenido-->
-</main>
+    <!-- Contenido-->
+    <main>
+        <article class="blog">
+            <h4>Acerca de los profesionales<a href="#"></a>
+            </h4>
+        </article>
+        <!--lista por definición-->
+        <article id="presentacion">
+            <img src="../img/rasa.jpg" alt=" " height="auto" width="20%">
+            <p> Con más de 12 años de experiencia en el mundo de yoga y otros 25 años en la alimentación consciente a
+                base de plantas; Rasa Kirtan Dasi (Florencia) es co-fundadora de Gokulam y profe de las clases de hatha
+                y ashtanga. Suele estar en el shala en su horario favorito que es la mañana. También es la encargada de
+                la parte teórica, práctica y anatómica de la Formación y Profundización en Ashtnaga anual que se ofrece
+                en nuestro estudio.</p>
+            <img src="../img/aksaya.jpg" alt=" " height="auto" width="20%">
+            <p> Akshaya Balaram Das es un practicante de Bhakti-yoga y co-fundador de Gokulam. Es el encargado de la
+                parte filosófica y quién anima al desarrollo espiritual en nuestra formación FyPA. Comenzó su camino del
+                yoga a través de hatha hace unos 12 años atrás. Ha practicado bajo la supervisión de Pablo Pirillo hasta
+                la cuarentena. Pueden encontrarlo en los horarios de la tarde-noche.</p>
+            <img src="../img/karen.jpg" alt=" " height="auto" width="20%">
+            <p> Para nosotros, Karen es una de las profes más consciente en las clases dedicadas a la vivencia de ser
+                mamá. Teniendo sus años de experiencia en el yoga, continúa formandose como profesional. En 2023 se unió
+                al team Gokulam y se inscribió en el FyPA para comprender de lleno y actuar en consecuencia con los
+                standares del estudio. Podés contactarte directamente con ella para conocerce y coordinar una clase de
+                prueba. Contactar a <a href="https://www.instagram.com/hacia_adentro_yoga/">Karen </a></p>
+            <img src="../img/betu.jpg" alt=" " height="auto" width="20%">
+            <p> Betina García es profe de las clases de vinyasa yoga en Gokulam. Sus propuestas se renuevan a cada
+                clase, presentando un dinamismo completo que puede adaptarse completamente a cualquier necesidad y
+                nivel. Utiliza elementos como música para recear un viaje completo. Podés contactarte directamente con
+                ella para conocerce y coordinar una clase de prueba. Contactar a <a
+                    href="https://www.instagram.com/betugarciayoga/">Betu </a></p>
+            <p>Si querés más información, envianos un mensaje a través de <a href="./contacto.html">contacto</a>
+            </p>
+        </article>
+        <!-- final de lista por definición-->
+        <!-- Final de contenido-->
+    </main>
     <!--footer-->
     <footer>
         <h3> © 2023 gokulamyoga.com.ar todos los derechos reservados
         </h3>
-            <nav class="redes">
-                <a href="https://www.instagram.com/gokulamyoga/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.threads.net/@gokulamyoga"><i class="fa-brands fa-threads"></i></a>
-                <a href="https://www.facebook.com/gokulamyoga"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="mailto:gokulamashtangayoga@gmail.com"><i class="fa-regular fa-envelope"></i>
-            </nav>
+        <nav class="redes">
+            <a href="https://www.instagram.com/gokulamyoga/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.threads.net/@gokulamyoga"><i class="fa-brands fa-threads"></i></a>
+            <a href="https://www.facebook.com/gokulamyoga"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="mailto:gokulamashtangayoga@gmail.com"><i class="fa-regular fa-envelope"></i>
+        </nav>
     </footer>
     <!-- fin de footer-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

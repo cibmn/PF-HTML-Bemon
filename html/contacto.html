@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contacta al estudio o profesor en particular utilizando esta plataforma">
-    <meta name="keywords" content="porfesores, instructores, guru, maestro, pattabhi jois, sharath, mysore, india, shiva ">
+    <meta name="keywords"
+        content="porfesores, instructores, guru, maestro, pattabhi jois, sharath, mysore, india, shiva ">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -16,88 +18,116 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Contacto - Gokulam Ashtanga Yoga Ashram</title>
 </head>
+
 <body>
     <!-- header-->
     <header>
-        <img src="../img/vaca.png" alt="vaca" height="200">
-        <h1>Gokulam</h1>
-        <h3>Ashtanga Yoga Ashram</h3>
+        <img id="vaca" src="../img/vaca.png" alt="vaca">
         <!--navbar inicia -->
-        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <nav class="navbar navbar-light bg-light fixed-top">
             <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                <li class="nav-item">
-                    <a class="nav-link" href="./cyf.html">Clases y Formación</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./eventos.html">Eventos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./us.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+                <a class="navbar-brand" href="#">
+                    <h1>Gokulam Ashtanga Yoga Ashram</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/cyf.html">Clases y Formación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/eventos.html">Eventos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/us.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">Plataforma
+                            <input type="text" placeholder="presiona y tipea el color">
+                        </form>
+                    </div>
+                </div>
             </div>
         </nav>
         <!-- navbar fin-->
+        <!-- final de header-->
     </header>
-    <!-- final de header-->
     <!-- Contenido-->
     <main>
-<!--formulario-->
-<h4>Contacto</h4>
-    <section id="contactar">
-        <form id="form" action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
-        <h3>Por favor, complete los siguientes campos:</h3>
-        Nombres <input type="text" required> <br>
-        Email <input type="email"> <br>
-        Fecha <input type="date"> <br>
-        Adjuntar comprobante? <input type="file" id="boton"> <br>
-        Telefono <input type="text" required placeholder="escribí tu número"> <br>
-        <br>
-        <textarea name="areadetexto" id="comentario" cols="50" rows="8" placeholder="escribe tu comentario"></textarea> <br>
-<!--boton de envío-->
-        <input type="submit" value="enviar">
-    </section>
-<!-- fin de formulario-->
-<!--- newsletter-->
-<section>
-    <TABLE id="subs" border="1" cellspacing="1"  cellpadding="10" align="center" data-aos="fade-up">
-        <TR>
-            <TH>
-                <h4>Suscribite al newsletter</h4>
-                    <form action="enviar.php" method="post" enctype="text/plain">
-                <h3>Recibí nuestras promos, eventos e información importante</h3>
-                    <input type="text" placeholder="Ingresá tu mail" required>
-                <input type="submit"></form>
-            </TH>
-        </tr>
-    </TABLE>
-</section>
-<!--- final del newsletter-->
-    <!-- final del contenido-->
+        <article class="blog">
+            <h4>Contacto<a href="#"></a>
+            </h4>
+        </article>
+        <section id="contactar">
+            <form id="form" action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+                <h3>Por favor, complete los siguientes campos:</h3>
+                Nombres <input type="text" required> <br>
+                Email <input type="email"> <br>
+                Fecha <input type="date"> <br>
+                Adjuntar comprobante? <input type="file" id="boton"> <br>
+                Telefono <input type="text" required placeholder="escribí tu número"> <br>
+                <br>
+                <textarea name="areadetexto" id="comentario" cols="50" rows="8"
+                    placeholder="escribe tu comentario"></textarea> <br>
+                <!--boton de envío-->
+                <input type="submit" value="enviar">
+        </section>
+        <!-- fin de formulario-->
+        <!--- newsletter-->
+        <section>
+            <TABLE id="subs" border="1" cellspacing="1" cellpadding="10" align="center" data-aos="fade-up">
+                <TR>
+                    <TH>
+                        <h4>Suscribite al newsletter</h4>
+                        <form action="enviar.php" method="post" enctype="text/plain">
+                            <h3>Recibí nuestras promos, eventos e información importante</h3>
+                            <input type="text" placeholder="Ingresá tu mail" required>
+                            <input type="submit">
+                        </form>
+                    </TH>
+                </tr>
+            </TABLE>
+        </section>
+        <!--- final del newsletter-->
+        <!-- final del contenido-->
     </main>
     <!--footer-->
     <footer>
         <h3> © 2023 gokulamyoga.com.ar todos los derechos reservados
         </h3>
-            <nav>
-                <a href="https://www.instagram.com/gokulamyoga/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.threads.net/@gokulamyoga"><i class="fa-brands fa-threads"></i></a>
-                <a href="https://www.facebook.com/gokulamyoga"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="mailto:gokulamashtangayoga@gmail.com"><i class="fa-regular fa-envelope"></i>
-            </nav>
+        <nav>
+            <a href="https://www.instagram.com/gokulamyoga/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.threads.net/@gokulamyoga"><i class="fa-brands fa-threads"></i></a>
+            <a href="https://www.facebook.com/gokulamyoga"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="mailto:gokulamashtangayoga@gmail.com"><i class="fa-regular fa-envelope"></i>
+        </nav>
     </footer>
     <!-- fin de footer-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

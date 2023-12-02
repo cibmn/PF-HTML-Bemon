@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eventos, talleres, workshops de ashtanga, hatha y vinyasa yoga en Buenos Aires, Argentina">
+    <meta name="description"
+        content="Eventos, talleres, workshops de ashtanga, hatha y vinyasa yoga en Buenos Aires, Argentina">
     <meta name="keywords" content="yoga, ashtanga, mantra, workshop, retiro, mysore, india, shiva ">
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -18,84 +19,107 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Eventos - Gokulam Ashtanga Yoga Ashram</title>
 </head>
+
 <body>
     <!-- header-->
     <header>
-        <img src="../img/vaca.png" alt="vaca" height="200">
-        <h1>Gokulam</h1>
-        <h3>Ashtanga Yoga Ashram</h3>
+        <img id="vaca" src="../img/vaca.png" alt="vaca">
         <!--navbar inicia -->
-        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <nav class="navbar navbar-light bg-light fixed-top">
             <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./cyf.html">Clases y Formación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./eventos.html">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./us.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
+                <a class="navbar-brand" href="#">
+                    <h1>Gokulam Ashtanga Yoga Ashram</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/cyf.html">Clases y Formación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/eventos.html">Eventos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/us.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">Plataforma
+                            <input type="text" placeholder="presiona y tipea el color">
+                        </form>
+                    </div>
+                </div>
             </div>
         </nav>
         <!-- navbar fin-->
+        <!-- final de header-->
     </header>
-    <!-- final de header-->
-    <!-- contenido-->
+    <!-- Contenido-->
     <main>
+        <article class="blog">
+            <h4>Eventos<a href="#"></a>
+            </h4>
+        </article>
         <!--lista por definición-->
         <section>
-        <h4>Proximos eventos</h4>
-        <h3>Subscribite al Newsletter abajo para saber toda la info mensual</h3>
-        <!-- fin de lista-->
-        <dl class="row">
-            <dt class="col-sm-3">Noviembre</dt>
-            <dd class="col-sm-9">mes de Kartik</dd>
-            <dt class="col-sm-3"></dt>
-            <dd class="col-sm-9">
-                <p>Japa Mala Workshop - domingo 5 a las 10.30h</p>
-            <dt class="col-sm-3">Diciembre</dt>
-            <dd class="col-sm-9">ultimas dos semanas NO HAY CLASES!</dd>
-            <dt class="col-sm-3"></dt>
-            <dd class="col-sm-9">
-                <p>LED (guiada Primera Serie) - sábado 11 a las 8.45h</p>
-                <p>FyPA - sábado 11 y domingo 12, según horarios respectivos</p>
-        </dl>
+            <h3>Subscribite al Newsletter abajo para saber toda la info mensual</h3>
+            <!-- fin de lista-->
+            <dl class="row">
+                <dt class="col-sm-3">Noviembre</dt>
+                <dd class="col-sm-9">mes de Kartik</dd>
+                <dt class="col-sm-3"></dt>
+                <dd class="col-sm-9">
+                    <p>Japa Mala Workshop - domingo 5 a las 10.30h</p>
+                <dt class="col-sm-3">Diciembre</dt>
+                <dd class="col-sm-9">ultimas dos semanas NO HAY CLASES!</dd>
+                <dt class="col-sm-3"></dt>
+                <dd class="col-sm-9">
+                    <p>LED (guiada Primera Serie) - sábado 11 a las 8.45h</p>
+                    <p>FyPA - sábado 11 y domingo 12, según horarios respectivos</p>
+            </dl>
         </section>
-<!--- newsletter-->
+        <!--- newsletter-->
         <section>
-            <TABLE id="subs" border="1" cellspacing="1"  cellpadding="10" align="center" data-aos="fade-up">
+            <TABLE id="subs" border="1" cellspacing="1" cellpadding="10" align="center" data-aos="fade-up">
                 <TR>
-                <TH>
-                    <h4>Suscribite al newsletter</h4>
-                    <form action="enviar.php" method="post" enctype="text/plain">
-                    <h3>Recibí nuestras promos, eventos e información importante</h3>
-                    <input type="text" placeholder="Ingresá tu mail" required>
-                    <input type="submit"></form>
-                </TH>
+                    <TH>
+                        <h4>Suscribite al newsletter</h4>
+                        <form action="enviar.php" method="post" enctype="text/plain">
+                            <h3>Recibí nuestras promos, eventos e información importante</h3>
+                            <input type="text" placeholder="Ingresá tu mail" required>
+                            <input type="submit">
+                        </form>
+                    </TH>
                 </tr>
             </TABLE>
         </section>
-<!--- final del newsletter-->
-    <!-- final del contenido-->
+        <!--- final del newsletter-->
+        <!-- final del contenido-->
     </main>
     <!--footer-->
     <footer>
         <h3> © 2023 gokulamyoga.com.ar todos los derechos reservados
         </h3>
-            <nav>
-                <a href="https://www.instagram.com/gokulamyoga/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.threads.net/@gokulamyoga"><i class="fa-brands fa-threads"></i></a>
-                <a href="https://www.facebook.com/gokulamyoga"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="mailto:gokulamashtangayoga@gmail.com"><i class="fa-regular fa-envelope"></i>
-            </nav>
+        <nav>
+            <a href="https://www.instagram.com/gokulamyoga/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.threads.net/@gokulamyoga"><i class="fa-brands fa-threads"></i></a>
+            <a href="https://www.facebook.com/gokulamyoga"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="mailto:gokulamashtangayoga@gmail.com"><i class="fa-regular fa-envelope"></i>
+        </nav>
     </footer>
     <!-- fin de footer-->
     <script src="js/wow.min.js"></script>
@@ -106,7 +130,12 @@
     <script>
         AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

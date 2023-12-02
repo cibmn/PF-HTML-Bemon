@@ -1,113 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Horarios para ashtanga, hatha y vinyasa yoga en Buenos Aires, Argentina">
     <meta name="keywords" content="horarios, schedules, clases, talleres, workshops, espacio, estudio, practica">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- BS 5.1 inicia -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <!-- BS 5.1 finaliza -->
-        <link rel="stylesheet" href="../css/estilos.css">
-        <title>Horarios - Gokulam Ashtanga Yoga Ashram</title>
-    </head>
-    <body>
-        <!-- header-->
-        <header>
-            <img src="../img/vaca.png" alt="vaca" height="200">
-            <h1>Gokulam</h1>
-            <h3>Ashtanga Yoga Ashram</h3>
-            <!--navbar inicia -->
-            <nav class="navbar navbar-expand-sm bg-light navbar-light">
-                <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./cyf.html">Clases y Formación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./eventos.html">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./us.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BS 5.1 inicia -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- BS 5.1 finaliza -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Horarios - Gokulam Ashtanga Yoga Ashram</title>
+</head>
+
+<body>
+    <!-- header-->
+    <header>
+        <img id="vaca" src="../img/vaca.png" alt="vaca">
+        <!--navbar inicia -->
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h1>Gokulam Ashtanga Yoga Ashram</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/cyf.html">Clases y Formación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/eventos.html">Eventos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/us.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">Plataforma
+                            <input type="text" placeholder="presiona y tipea el color">
+                        </form>
+                    </div>
                 </div>
-            </nav>
-            <!-- navbar fin-->
-        </header>
+            </div>
+        </nav>
+        <!-- navbar fin-->
         <!-- final de header-->
-        <main>
-            <!--- tabla-->
-            <h4>Horarios</h4>
-            <section>
-                <table id="dma" class="table table-bordered" border="2" cellspacing="1"  cellpadding="10">
-                    <TR><TH>lunes</TH>
-                        <th>martes</th>
-                        <th>miércoles</th>
-                        <th>jueves</th>
-                        <th>viernes</th>
-                    </TR>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>8h Ashtanga</td>
-                        <td></td>
-                        <td>8h Ashtanga</td>
-                    </tr>
-                    <tr>
-                        <td>18h Ashtanga</td>
-                        <td>17.45h Prenatal</td>
-                        <td>18h Ashtanga</td>
-                        <td>17.45h Prenatal</td>
-                        <td>18h Ashtanga</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">19hs Ashtanga Mysore</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">Ashtanga Mysore</td>
-                        <td>19.45hs Hatha</td>
-                    </tr>
-                </table>
-            </section>
-            <!---final de tabla-->
-            <!--lista por definición-->
-            <article class="fypa">
+    </header>
+    <!-- Contenido-->
+    <main>
+        <article class="blog">
+            <h4>Clases y Formación anual en Ashtanga Yoga<a href="#"></a>
+            </h4>
+        </article>
+        <section>
+            <table id="dma" class="table table-bordered" border="2" cellspacing="1" cellpadding="10">
+                <TR>
+                    <TH>lunes</TH>
+                    <th>martes</th>
+                    <th>miércoles</th>
+                    <th>jueves</th>
+                    <th>viernes</th>
+                </TR>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>8h Ashtanga</td>
+                    <td></td>
+                    <td>8h Ashtanga</td>
+                </tr>
+                <tr>
+                    <td>18h Ashtanga</td>
+                    <td>17.45h Prenatal</td>
+                    <td>18h Ashtanga</td>
+                    <td>17.45h Prenatal</td>
+                    <td>18h Ashtanga</td>
+                </tr>
+                <tr>
+                    <td colspan="4">19hs Ashtanga Mysore</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Ashtanga Mysore</td>
+                    <td>19.45hs Hatha</td>
+                </tr>
+            </table>
+        </section>
+        <!---final de tabla-->
+        <!--lista por definición-->
+        <article class="fypa">
             <h4>Formación y Profundización en Ashtanga - FyPA 2024</h4>
-                <p>La práctica es un proceso vivo que precisa ser indagado, observado y abierto.
-                    Con esta intro les anunciamos que están abiertas las inscripciones para la Formación y Profundización en Ashtanga 2023: FyPA 🙏
-                    <p>Esta formación nace del pedido de varixs practicantes y nuestra modalidad de compartir info. Nos dedicamos a estudiar, analizar y acompañar el desarrollo de la prácticas personales, atendiendo el llamado interno y único de cada persona.</p>
-                <p>Está formación es un espacio abierto a vivenciar la práctica y ahondar en su estudio, tanto para aquellxs que deseen formarse como instructores y para aquellxs que anhelen un año diferente a nivel personal, de mucha transformación interna. Mucho contenido filosófico, prácticas libres incluidas, etc.</p>
-                <p>Abrazo, Rasa y Charles </p> 
-                    <p>Si querés recibir la info completa, déjanos por md tu mail o un WhatsApp para enviarte el archivo. <a href="././contacto.html">contacto</a>
-                    </p>
-                </dl>
+            <p>La práctica es un proceso vivo que precisa ser indagado, observado y abierto.
+                Con esta intro les anunciamos que están abiertas las inscripciones para la Formación y Profundización en
+                Ashtanga 2023: FyPA 🙏
+            <p>Esta formación nace del pedido de varixs practicantes y nuestra modalidad de compartir info. Nos
+                dedicamos a estudiar, analizar y acompañar el desarrollo de la prácticas personales, atendiendo el
+                llamado interno y único de cada persona.</p>
+            <p>Está formación es un espacio abierto a vivenciar la práctica y ahondar en su estudio, tanto para aquellxs
+                que deseen formarse como instructores y para aquellxs que anhelen un año diferente a nivel personal, de
+                mucha transformación interna. Mucho contenido filosófico, prácticas libres incluidas, etc.</p>
+            <p>Abrazo, Rasa y Charles </p>
+            <p>Si querés recibir la info completa, déjanos por md tu mail o un WhatsApp para enviarte el archivo. <a
+                    href="././contacto.html">contacto</a>
+            </p>
+            </dl>
             <!-- final de lista por definición-->
-            </article>
-            <!-- final del contenido-->
-        </main>
-        <!--footer-->
-        <footer>
-            <h3> © 2023 gokulamyoga.com.ar todos los derechos reservados
-            </h3>
-                <nav class="redes">
-                    <a href="https://www.instagram.com/gokulamyoga/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.threads.net/@gokulamyoga"><i class="fa-brands fa-threads"></i></a>
-                    <a href="https://www.facebook.com/gokulamyoga"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="mailto:gokulamashtangayoga@gmail.com"><i class="fa-regular fa-envelope"></i>
-                </nav>
-        </footer>
-        <!-- fin de footer-->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    </body>
-    </html>
+        </article>
+        <!-- final del contenido-->
+    </main>
+    <!--footer-->
+    <footer>
+        <h3> © 2023 gokulamyoga.com.ar todos los derechos reservados
+        </h3>
+        <nav class="redes">
+            <a href="https://www.instagram.com/gokulamyoga/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.threads.net/@gokulamyoga"><i class="fa-brands fa-threads"></i></a>
+            <a href="https://www.facebook.com/gokulamyoga"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="mailto:gokulamashtangayoga@gmail.com"><i class="fa-regular fa-envelope"></i>
+        </nav>
+    </footer>
+    <!-- fin de footer-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
